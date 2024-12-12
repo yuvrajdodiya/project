@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    background-color: rgb(237, 215, 215);
+    color: rgb(18, 17, 17);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+nav {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+nav a 
+{
+    margin-right: 25px;
+    padding-top: 25px;
+    transition: 0.5s ease;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover
+{
+    color: brown;
+    border-bottom: 5rem;
+    border-bottom: 2px solid brown;
+}
+.active
+{
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+.logo {
+    color: brown;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    margin-left: -3.5rem;
+}
+
+.logo:hover 
+{
+    font-weight:700;
+    transform: scale(1.1);
+}
+
+.main-content {
+    margin: 5rem 0rem 0rem 5rem;
+}
+
+.main-content h1 {
+    font-size: 45px;
+}
+
+.main-content h1 span {
+    color: brown;
+}
+
+.main-content h3 {
+    font-size: 25px;
+}
+
+.main-content h3 span {
+    color: brown;
+}
+
+.content {
+    font-size: 18px;
+    margin: 2rem 0rem 0rem 5rem;
+    
+    width: 450px;
+}
+
+.social-icons {
+    margin: 2rem 0rem 0rem 5rem;
+    font-size: 2.6em;
+}
+
+.social-icons a 
+{
+    margin-right: 2rem;
+    transition: 0.5s ease;
+}
+.social-icons a:hover
+{
+   text-shadow: 0px 0px 25px rgb(225, 0, 0);
+}
+.btn 
+{
+    margin: 2rem 0rem 5rem 4.6rem;
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.btn a:hover
+{
+    box-shadow: 0px 0px 15px red;
+}
+
+.btn a {
+    border: 5px solid brown;
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+}
+
+.image {
+    margin: -30rem 0rem 0rem 53rem;
+}
+
+.image img {
+    height: 350px;
+    width: 300px;
+    border-radius: 20%;
+    border: 4px solid rgb(216, 196, 196);
+    box-shadow: 0px 0px 20px rgb(220, 124, 73); 
+    transition: 0.5s;
+}
+.image img:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(202, 79, 81);    
+}
+
+section 
+{
+    transform: scale(1.1);
+    margin-bottom: 6rem;
+}
+.service tr
+{
+    font-size: 35px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.service tr:hover
+{
+    text-shadow: 0px 0px 15px brown;
+    transform: scale(1.1);
+    
+}
+.service td 
+{
+    padding-bottom: 0.5rem;
+}
+.service tr td i
+{
+    margin-right: 1.5rem;
+}
+.skill-container
+{
+    display: grid;
+    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    margin-left: 5rem;
+}
+.skill-container div
+{
+    width: 250px;
+    height: 300px;
+    border: 2px solid brown;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px brown;
+    transition: 0.5s ease;
+}
+.skill-container div h3
+{
+    font-size: 25px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+.skill-container div p
+{
+    margin: 0.8rem 1rem 1.5rem 1rem;
+    background-color: transparent;
+}
+.skill-container div:hover
+{
+    box-shadow: 0px 0px 15px brown;
+    border: 2px solid rgb(163, 87, 87);
+    transform: scale(1.1);
+}
+.edu-content td,th
+{
+    border: 1px solid brown;
+}
+.edu-content
+{
+    border: 1px solid brown;
+}
+.edu-content th,td
+{
+    padding: 0.6rem;
+}
+.edu-content
+{
+    font-size: 15px;
+}
+
+.contact-content
+{
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact-content tr
+{
+    transition: 0.5s ease;
+}
+.contact-content tr:hover
+{
+    text-shadow: 0px 0px 15px brown;
+}
+hr
+{
+    width: 1200px;
+}
+iframe
+{
+    margin-top: 2rem;
+}
+.position
+{
+    color: brown;
+}
+.position::before
+{
+    content: "";
+    animation: 4s words infinite;
+}
+.position::after
+{
+    content: "";
+}
+@keyframes words
+{
+    0%,50%
+    {
+        content: "python developer"
+    }
+    50%,100%
+    {
+        content: "backend developer"
+    }
+}
+
+@media(max-width:430px)
+{
+  
+    header {
+        display: block;
+        margin: 1.5rem;
+    }
+    
+    nav {
+        font-size: 14px;
+        margin-top: 10px;
+        background-color: transparent;
+    }
+    
+    nav a 
+    {
+        margin-right: 5px;
+        padding-top: 0px;
+        transition: 0.5s ease;
+        border-bottom: 2px solid transparent;
+    }
+    .active
+    {
+        color: brown;
+        border-bottom: 2px solid brown;
+    }
+    
+    .logo {
+        color: brown;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        transition: 0.5s ease;
+    }
+    
+    .main-content {
+        margin: 3rem 0rem 0rem 2rem;
+    }
+    
+    .main-content h1 {
+        font-size: 35px;
+    }
+    
+    .content {
+        font-size: 15px;
+        margin: 2rem 0rem 0rem 2rem;
+        width: 370px;
+        text-align: left;
+    }
+    
+    .social-icons {
+        margin: 2rem 0rem 0rem 3rem;
+        font-size: 2.6em;
+    }
+    .btn 
+    {
+        margin: 2rem 0rem 5rem 6rem;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    
+    
+    .image {
+        margin: 5rem 0rem 0rem 4rem;
+    }
+    
+    .image img {
+        height: 300px;
+        width: 300px;
+        border-radius: 20%;
+        border: 4px solid rgb(216, 196, 196);
+        box-shadow: 0px 0px 20px rgb(79, 79, 202); 
+        transition: 0.5s;
+    }
+    .image img:hover
+    {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgb(202, 79, 81);    
+    }
+    
+   
+    .service tr
+    {
+        font-size: 25px;
+        font-weight: 600;
+        transition: 0.5s ease;
+    }
+   
+   
+    .service tr td i
+    {
+        margin-right: 1.5rem;
+    }
+    .skill-container
+    {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        margin-left: 3rem;
+        margin-top: 7rem;
+    }
+    .skill-container div
+    {
+        width: 250px;
+        height: 300px;
+        border: 2px solid brown;
+        border-radius: 50px;
+        box-shadow: 0px 0px 15px brown;
+        transition: 0.5s ease;
+    }
+    .skill-container div h3
+    {
+        font-size: 25px;
+        margin-top: 2rem;
+        background-color: transparent;
+    }
+    .skill-container div p
+    {
+        margin: 0.8rem 1rem 1.5rem 1rem;
+        background-color: transparent;
+    }
+    .skill-container div:hover
+    {
+        box-shadow: 0px 0px 15px brown;
+        border: 2px solid rgb(163, 87, 87);
+        transform: scale(1.1);
+    }
+
+    .contact-content
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 2rem;
+    }
+    hr
+    {
+        width: 370px;
+    }
+    iframe
+    {
+        height: 300px;
+        width: 370px;
+        margin-top: 2rem;
+    }
+}
